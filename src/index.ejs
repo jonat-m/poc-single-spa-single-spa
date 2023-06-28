@@ -44,19 +44,18 @@
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
   <% if (isLocal) { %>
-    <!-- 
-      "@org/react-single": "//localhost:8500/org-react-single.js", 
-      "@org/react-parcel": "//localhost:8500/org-react-parcel.js",
-      "@org/react-app1": "//localhost:8501/org-react-app1.js",
-    -->
-  <script type="systemjs-importmap">
+
+    <script type="systemjs-importmap">
     {
       "imports": {
         "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@org/root-config": "//localhost:9000/org-root-config.js",
+        "@org/react-single": "//localhost:8500/org-react-single.js", 
         "@org/react-multiple": "//localhost:8500/org-react-multiple.js",        
+        "@org/react-parcel": "//localhost:8500/org-react-parcel.js",
+        "@org/react-app1": "//localhost:8501/org-react-app1.js",
         "@org/utils": "//localhost:8600/org-utils.js",
-        "@org/react-header": "//localhost:8700/org-react-header.js"
+        "@org/react-header": "//localhost:8700/org-react-header.js"        
       }
     }
   </script>
@@ -84,10 +83,10 @@
   <main></main>
   <script>
     System.import('@org/root-config');
-    // System.import('@org/react-single');
+    System.import('@org/react-single');
     System.import('@org/react-multiple');
-    // System.import('@org/react-parcel');
-    // System.import('@org/react-app1');
+    System.import('@org/react-parcel');
+    System.import('@org/react-app1');
     System.import('@org/utils');
     System.import('@org/react-header');
   </script>
