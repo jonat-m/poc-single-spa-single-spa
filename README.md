@@ -22,8 +22,8 @@ Parts of this project are the repositories:
 - `poc-single-spa-single-spa`: Single-SPA is the engine that connects all the microfrontends.
 - `poc-single-spa-react-single`: react-single is an initial test run.
 - `poc-single-spa-react-multiple`: react-multiple also includes routes for navigation.
-- `poc-single-spa-react-app1`: react-app1 together with react-parcel, combines two different microfrontends that run concurrently.
-- `poc-single-spa-react-parcel`: react-parcel, together with react-app1 it combines two different microfrontends that run concurrently.
+- `poc-single-spa-react-app1`: react-app1 together with react-parcel and utils, combines different microfrontends that run concurrently.
+- `poc-single-spa-react-parcel`: react-parcel, together with react-app1 and utils combines different microfrontends that run concurrently.
 - `poc-single-spa-utils`: utils is a package that contains helper functions for other microfrontends.
 - `poc-single-spa-react-header`: react-header is a header component visible in all the microfrontends.
 
